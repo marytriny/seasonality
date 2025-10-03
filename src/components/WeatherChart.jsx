@@ -75,9 +75,9 @@ export default function WeatherChart({ location }) {
   // Get chart data for selected location and dates
   // Open Meteo Docs: https://open-meteo.com/en/docs/historical-weather-api
   useEffect(() => {
-    console.log(location)
+    // console.log(location)
     if (!location[0] || !location[1]) return;
-    else console.log('getting data... ')
+
     setLoadingData(true);
 
     axios.get("https://archive-api.open-meteo.com/v1/archive", {
@@ -91,7 +91,7 @@ export default function WeatherChart({ location }) {
         temperature_unit: "fahrenheit"
       }
     }).then((res) => {
-      console.log(res);
+      // console.log(res.data);
       const monthly = aggregateMonthly(res.data);
       const chartData = toRecharts(monthly);
       setData(chartData);
