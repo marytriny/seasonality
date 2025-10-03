@@ -1,2 +1,2 @@
 # seasonality
-Dynamically generated seasonality chart basedon location marked on interactive map and dates selected.
+Dynamically generated seasonality chart based on location marked on interactive map and dates selected.
