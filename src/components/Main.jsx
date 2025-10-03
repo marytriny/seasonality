@@ -9,7 +9,7 @@ import DarkModeIcon from '@mui/icons-material/DarkMode';
 // Local imports
 import { LIGHT_THEME, DARK_THEME } from '../themes';
 import WeatherChart from "./WeatherChart";
-// import Map from "./Map";
+import Map from "./Map";
 
 // Theme options
 const THEME = {
@@ -55,7 +55,7 @@ function Main() {
         <Typography variant='h6' align='center' color='text.secondary'>
           Get year over year weather trends for the area selected
         </Typography>
-        {/* <Map setLocation={setLocation} /> */}
+        <Map setLocation={setLocation} />
         <WeatherChart location={location} />
       </Paper>
     </ThemeProvider>
