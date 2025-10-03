@@ -47,7 +47,7 @@ const Graph = ({
   return (
     <div style={{ width: '100%', textAlign: 'center' }}>
       {( data && data.length > 0) ? (
-        <ResponsiveContainer width={'100%'} height={400}>
+        <ResponsiveContainer width={'100%'} height={300}>
           <LineChart
             syncId="all" // Allows us to synchronize tooltips in all graphs
             data={data}

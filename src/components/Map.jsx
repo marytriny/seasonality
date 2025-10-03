@@ -26,7 +26,7 @@ const Map = ({ setLocation }) => {
 
   return (
     <div style={{ margin: '10px' }}>
-      <MapContainer style={{ width: '100%', height: '30vh' }} {...MAP_PROPS}>
+      <MapContainer style={{ width: '100%', height: '250px' }} {...MAP_PROPS}>
         <FeatureGroup ref={featureGroupRef}>
           <EditControl            
             position='topright'

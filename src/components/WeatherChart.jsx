@@ -53,7 +53,7 @@ export default function WeatherChart({ location }) {
 
   // Date range (in years)
   const [startYear, setStartYear] = useState(dayjs('2020-01-01'));
-  const [endYear, setEndYear] = useState(dayjs('2024-01-01'));
+  const [endYear, setEndYear] = useState(dayjs('2024-12-31'));
 
   // Data
   const [data, setData] = useState([]);
@@ -173,7 +173,7 @@ export default function WeatherChart({ location }) {
           <LinearProgress/>
         </div>
       ): (
-        <div style={{ width: "100%", height: 450 }}>
+        <div style={{ width: "100%", height: 300 }}>
           <Graph
             lines={years}
             data={currData || []}
