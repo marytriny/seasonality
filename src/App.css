@@ -1,0 +1,24 @@
+.App {
+  min-height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px 5px;
+}
+
+.graph-no-data {
+  color: black;
+  background-color: #ccc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.date-range {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0 10px;
+}
