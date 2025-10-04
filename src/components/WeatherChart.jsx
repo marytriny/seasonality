@@ -115,7 +115,7 @@ export default function WeatherChart({ location }) {
     };
 
     // Temporarily slice data to the section highlighted
-    setCurrData(data.slice(x1, x2 + 1));
+    setCurrData(data.slice(x1-1, x2));
     setRefArea({ x1: "", x2: "" });
   }
 
